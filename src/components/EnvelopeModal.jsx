@@ -105,8 +105,8 @@ export default function EnvelopeModal({ onOpen }) {
           <motion.div
             initial={false}
             animate={{
-              y: isLetterOut ? -75 : -8,
-              scale: isLetterOut ? 1.08 : 0.94,
+              y: isLetterOut ? -75 : -14,
+              scale: isLetterOut ? 1.08 : 0.92,
               opacity: 1,
               boxShadow: isLetterOut
                 ? '0 25px 35px -10px rgba(255, 107, 129, 0.45)'
@@ -121,8 +121,10 @@ export default function EnvelopeModal({ onOpen }) {
             style={{
               zIndex: isLetterOut ? 30 : 5,
             }}
-            className={`absolute top-2 left-3 right-3 bg-gradient-to-b from-[#FFFDF9] to-white border-2 border-pink-300 rounded-2xl p-4 text-center flex flex-col items-center justify-center transition-shadow ${
-              isLetterOut ? 'ring-4 ring-pink-200/70 pointer-events-auto shadow-2xl' : 'pointer-events-none'
+            className={`absolute top-2 left-3 right-3 bg-gradient-to-b from-[#FFFDF9] to-white border-2 border-pink-300 rounded-2xl p-3.5 sm:p-4 text-center flex flex-col items-center justify-center transition-shadow ${
+              isLetterOut
+                ? 'ring-4 ring-pink-200/70 pointer-events-auto shadow-2xl'
+                : 'max-h-[152px] sm:max-h-[176px] md:max-h-[195px] overflow-hidden pointer-events-none'
             }`}
           >
             {/* Header Stamp */}
@@ -174,7 +176,7 @@ export default function EnvelopeModal({ onOpen }) {
 
           {/* 4. Penutup Amplop Atas (Flap) & Segel Paw (Tetap tertutup di posisi paling depan z-20 saat awal, membuka 180° ke atas saat diklik) */}
           <div
-            className="absolute top-0 left-0 w-full h-[95px] pointer-events-none"
+            className="absolute top-0 left-0 w-full h-[100px] pointer-events-none"
             style={{
               perspective: 1000,
               zIndex: isOpen ? 1 : 20,
@@ -195,16 +197,16 @@ export default function EnvelopeModal({ onOpen }) {
               }}
               className="w-full h-full relative"
             >
-              <svg viewBox="0 0 280 95" className="w-full h-full drop-shadow-sm" preserveAspectRatio="none">
+              <svg viewBox="0 0 280 100" className="w-full h-full drop-shadow-sm" preserveAspectRatio="none">
                 <polygon
-                  points="0,0 140,95 280,0"
+                  points="0,0 140,100 280,0"
                   fill={isOpen ? '#FFAAA6' : '#FF8DA1'}
                 />
               </svg>
 
-              {/* Segel Lilin Lilin Paw (Hanya tampil saat amplop tertutup) */}
+              {/* Segel Lilin Paw (Hanya tampil saat amplop tertutup) */}
               {!isOpen && (
-                <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-gradient-to-br from-pastel-darkPink to-rose-500 text-white border-2 border-pink-100 shadow-md flex items-center justify-center text-sm z-30">
+                <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 w-9 h-9 rounded-full bg-gradient-to-br from-pastel-darkPink to-rose-500 text-white border-2 border-pink-100 shadow-md flex items-center justify-center text-sm z-30">
                   <i className="fa-solid fa-paw"></i>
                 </div>
               )}
