@@ -29,7 +29,7 @@ export default function CakeCard() {
       {/* Header Badge */}
       <div className="pt-1">
         <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-pastel-pink/15 text-pastel-darkPink font-bold text-xs sm:text-sm border border-pastel-pink/30 shadow-sm">
-          <i className="fa-solid fa-wand-magic-sparkles"></i> Make a Wish, Ghina!
+          <i className="fa-solid fa-wand-magic-sparkles"></i> Make a Wish, Sayaaaaang!
         </span>
       </div>
 

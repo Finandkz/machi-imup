@@ -57,7 +57,7 @@ export default function BalloonCard({ onNext }) {
           <i className="fa-solid fa-wand-magic-sparkles text-xs"></i> Mini-Game Spesial
         </span>
         <h2 className="text-xl sm:text-3xl font-bold text-pastel-darkPink mt-1 sm:mt-2">
-          Pecahin Balon Ulang Tahunmu!
+          Pecahin Balon Ulang Tahunmu satu persatu yaa!
         </h2>
         <p className="text-xs sm:text-base text-pastel-muted max-w-xs sm:max-w-md mx-auto mt-0.5">
           Ada pesan rahasia di dalam setiap balon untuk inaa!
