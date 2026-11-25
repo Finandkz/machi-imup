@@ -1,0 +1,17 @@
+========================================================
+CARA MENAMBAHKAN FOTO PACAR (GHINA NAVISA) KE WEBSITE:
+========================================================
+
+Kamu cukup memasukkan 4 foto favorit pacarmu ke dalam folder ini:
+C:\Users\Acer\OneDrive\Documents\Ultah\public\photos\
+
+Beri nama file fotonya seperti ini:
+1. foto1.jpg  -> untuk kartu "Senyum Ghina Paling Manis"
+2. foto2.jpg  -> untuk kartu "Si Paling Gemesin & Suka Kucing"
+3. foto3.jpg  -> untuk kartu "Semua Cerita Random Kita"
+4. foto4.jpg  -> untuk kartu "Happy 19th Birthday Sayang"
+
+Tips:
+- Format foto bisa .jpg, .jpeg, atau .png.
+- Foto akan otomatis terpotong rapi menyesuaikan bingkai Polaroid yang estetik.
+- Jika foto belum dimasukkan, website akan otomatis menampilkan ilustrasi lucu sebagai cadangan.
